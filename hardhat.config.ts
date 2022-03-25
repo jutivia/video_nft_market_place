@@ -35,6 +35,20 @@ module.exports = {
       gasPrice: 10000000000,
       timeout: 90000,
     },
+    Conflux_Mainnet: {
+      url: process.env.CONFLUX_MAIN_NET,
+      accounts: [process.env.PRIVATE_KEY],
+      blockGasLimit: 200000000000,
+      gasPrice: 10000000000,
+      timeout: 90000,
+    },
+    Conflux_Testnet: {
+      url: process.env.CONFLUX_TEST_NET,
+      accounts: [process.env.PRIVATE_KEY],
+      blockGasLimit: 200000000000,
+      gasPrice: 10000000000,
+      timeout: 90000,
+    }
   },
   gasReporter: {
     currency: "USD",
